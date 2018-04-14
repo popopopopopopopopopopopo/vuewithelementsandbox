@@ -10,7 +10,7 @@
       :before-close="handleClose">
       <span>{{ msg }}</span>
       <span slot="footer" class="dialog-footer">
-    <el-button @click="dialogVisible = false">Cancel</el-button>
+    <el-button @click="handleCancel">Cancel</el-button>
     <el-button type="primary" @click="dialogVisible = false">Confirm</el-button>
   </span>
     </el-dialog>
@@ -24,7 +24,24 @@ export default {
     title: 'dialog test!',
     msg: 'dialog test',
     dialogVisible: false,
+    isCancel: false,
+    isConfirm: false,
   }),
+  methods: {
+    // closeボタン押したときに発砲される
+    handleClose(done) {
+      this.$confirm('Are you sure to close this dialog?')
+        .then((_) => {
+          done();
+        })
+        .catch((_) => {});
+    },
+    handleCancel(done) {
+      // Cancelボタンに対するイベントをハンドルする
+      this.dialogVisible = false;
+      this.isCancel = true;
+    },
+  },
 };
 </script>
 
