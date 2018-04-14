@@ -7,6 +7,8 @@ import AlertComponent from '@/components/AlertComponent';
 import ElDialogComponent from '@/components/ElDialogComponent';
 import ElConfirmComponent from '@/components/ElConfirmComponent';
 import ElPromptComponent from '@/components/ElPromptComponent';
+import ElMessageCustomizeComponent from '@/components/ElMessageCustomizeComponent';
+import ElMessageHTMLTextComponent from '@/components/ElMessageHTMLTextComponent';
 
 Vue.use(Router);
 
@@ -46,6 +48,16 @@ export default new Router({
       path: '/ElPromptComponent',
       name: 'ElPromptComponent',
       component: ElPromptComponent,
+    },
+    {
+      path: '/ElMessageCustomizeComponent',
+      name: 'ElMessageCustomizeComponent',
+      component: ElMessageCustomizeComponent,
+    },
+    {
+      path: '/ElMessageHTMLTextComponent',
+      name: 'ElMessageHTMLTextComponent',
+      component: ElMessageHTMLTextComponent,
     },
   ],
 });
