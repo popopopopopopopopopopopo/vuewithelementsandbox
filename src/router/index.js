@@ -11,6 +11,8 @@ import ElMessageCustomizeComponent from '@/components/ElMessageCustomizeComponen
 import ElMessageHTMLTextComponent from '@/components/ElMessageHTMLTextComponent';
 import ElAlertBasicComponent from '@/components/ElAlertBasicComponent';
 import ElAlertWithIcomComponent from '@/components/ElAlertWithIcomComponent';
+import ElToolTipComponent from '@/components/ElToolTipComponent';
+import ElToolTipAdvancedUsageComponent from '@/components/ElToolTipAdvancedUsageComponent';
 
 Vue.use(Router);
 
@@ -70,6 +72,16 @@ export default new Router({
       path: '/ElAlertWithIcomComponent',
       name: 'ElAlertWithIcomComponent',
       component: ElAlertWithIcomComponent,
+    },
+    {
+      path: '/ElToolTipComponent',
+      name: 'ElToolTipComponent',
+      component: ElToolTipComponent,
+    },
+    {
+      path: '/ElToolTipAdvancedUsageComponent',
+      name: 'ElToolTipAdvancedUsageComponent',
+      component: ElToolTipAdvancedUsageComponent,
     },
   ],
 });
