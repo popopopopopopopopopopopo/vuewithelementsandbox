@@ -8,7 +8,16 @@
         trigger="hover"
         content="this is content, this is content, this is content">
       </el-popover>
+      <el-popover
+        ref="popover2"
+        placement="bottom"
+        title="pop-title"
+        width="200"
+        trigger="click"
+        content="this is content, this is content, this is content">
+      </el-popover>
       <el-button v-popover:popover1>Hover the popover</el-button>
+      <el-button v-popover:popover2>Click to popover</el-button>
     </div>
 </template>
 
