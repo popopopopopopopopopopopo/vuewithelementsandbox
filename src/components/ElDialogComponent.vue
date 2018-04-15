@@ -18,6 +18,7 @@
 </template>
 
 <script>
+// センタリングオプションの追加
 export default {
   name: 'ElDialogComponent',
   data: () => ({
@@ -30,7 +31,7 @@ export default {
   methods: {
     // closeボタン押したときに発砲される
     handleClose(done) {
-      this.$confirm('Are you sure to close this dialog?')
+      this.$confirm('Are you sure to close this dialog?', 'confirm')
         .then((_) => {
           done();
         })

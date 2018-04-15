@@ -7,6 +7,7 @@
 <script>// e mail confirm
 // コンファーム後のvalue、sampleではvalueをそのまま出してるけど、valueはobjectで、各プロパティ
 let getEmailAddress = 'hogehoge';
+
 export default {
   name: 'ElPromptComponent',
   methods: {
