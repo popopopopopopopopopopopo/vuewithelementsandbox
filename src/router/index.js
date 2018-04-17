@@ -15,6 +15,7 @@ import ElToolTipComponent from '@/components/ElToolTipComponent';
 import ElToolTipAdvancedUsageComponent from '@/components/ElToolTipAdvancedUsageComponent';
 import ElPopoverComponent from '@/components/ElPopoverComponent';
 import ElPopoverNestedComponent from '@/components/ElPopoverNestedComponent';
+import ElCardWithVForComponent from '@/components/ElCardWithVForComponent';
 
 Vue.use(Router);
 
@@ -94,6 +95,11 @@ export default new Router({
       path: '/ElPopoverNestedComponent',
       name: 'ElPopoverNestedComponent',
       component: ElPopoverNestedComponent,
+    },
+    {
+      path: '/ElCardWithVForComponent',
+      name: 'ElCardWithVForComponent',
+      component: ElCardWithVForComponent,
     },
   ],
 });
