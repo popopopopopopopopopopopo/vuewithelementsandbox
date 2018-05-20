@@ -1,5 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import Login from '@/components/Login';
+import Main from '@/components/Main';
 import HelloWorld from '@/components/HelloWorld';
 import SutekinaComponent from '@/components/SutekinaComponent';
 import ButtonAndDialog from '@/components/ButtonAndDialog';
@@ -24,94 +26,105 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
+      path: '/login',
+      name: 'Login',
+      component: Login,
+    },
+    {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld,
-    },
-    {
-      path: '/SutekinaComponent',
-      name: 'SutekinaComponent',
-      component: SutekinaComponent,
-    },
-    {
-      path: '/ButtonAndDialog',
-      name: 'ButtonAndDialog',
-      component: ButtonAndDialog,
-    },
-    {
-      path: '/AlertComponent',
-      name: 'AlertComponent',
-      component: AlertComponent,
-    },
-    {
-      path: '/ElDialogComponent',
-      name: 'ElDialogComponent',
-      component: ElDialogComponent,
-    },
-    {
-      path: '/ElConfirmComponent',
-      name: 'ElConfirmComponent',
-      component: ElConfirmComponent,
-    },
-    {
-      path: '/ElPromptComponent',
-      name: 'ElPromptComponent',
-      component: ElPromptComponent,
-    },
-    {
-      path: '/ElMessageCustomizeComponent',
-      name: 'ElMessageCustomizeComponent',
-      component: ElMessageCustomizeComponent,
-    },
-    {
-      path: '/ElMessageHTMLTextComponent',
-      name: 'ElMessageHTMLTextComponent',
-      component: ElMessageHTMLTextComponent,
-    },
-    {
-      path: '/ElAlertBasicComponent',
-      name: 'ElAlertBasicComponent',
-      component: ElAlertBasicComponent,
-    },
-    {
-      path: '/ElAlertWithIcomComponent',
-      name: 'ElAlertWithIcomComponent',
-      component: ElAlertWithIcomComponent,
-    },
-    {
-      path: '/ElToolTipComponent',
-      name: 'ElToolTipComponent',
-      component: ElToolTipComponent,
-    },
-    {
-      path: '/ElToolTipAdvancedUsageComponent',
-      name: 'ElToolTipAdvancedUsageComponent',
-      component: ElToolTipAdvancedUsageComponent,
-    },
-    {
-      path: '/ElPopoverComponent',
-      name: 'ElPopoverComponent',
-      component: ElPopoverComponent,
-    },
-    {
-      path: '/ElPopoverNestedComponent',
-      name: 'ElPopoverNestedComponent',
-      component: ElPopoverNestedComponent,
-    },
-    {
-      path: '/ElCardWithVForComponent',
-      name: 'ElCardWithVForComponent',
-      component: ElCardWithVForComponent,
-    },
-    {
-      path: '/ElStepComponent',
-      name: 'ElStepComponent',
-      component: ElStepComponent,
-    },
-    {
-      path: '/LayoutAndDetailComponent',
-      name: 'LayoutAndDetailComponent',
-      component: LayoutAndDetailComponent,
+      component: Main,
+      children: [
+        {
+          path: '/HelloWorld',
+          name: 'HelloWorld',
+          component: HelloWorld,
+        },
+        {
+          path: '/SutekinaComponent',
+          name: 'SutekinaComponent',
+          component: SutekinaComponent,
+        },
+        {
+          path: '/ButtonAndDialog',
+          name: 'ButtonAndDialog',
+          component: ButtonAndDialog,
+        },
+        {
+          path: '/AlertComponent',
+          name: 'AlertComponent',
+          component: AlertComponent,
+        },
+        {
+          path: '/ElDialogComponent',
+          name: 'ElDialogComponent',
+          component: ElDialogComponent,
+        },
+        {
+          path: '/ElConfirmComponent',
+          name: 'ElConfirmComponent',
+          component: ElConfirmComponent,
+        },
+        {
+          path: '/ElPromptComponent',
+          name: 'ElPromptComponent',
+          component: ElPromptComponent,
+        },
+        {
+          path: '/ElMessageCustomizeComponent',
+          name: 'ElMessageCustomizeComponent',
+          component: ElMessageCustomizeComponent,
+        },
+        {
+          path: '/ElMessageHTMLTextComponent',
+          name: 'ElMessageHTMLTextComponent',
+          component: ElMessageHTMLTextComponent,
+        },
+        {
+          path: '/ElAlertBasicComponent',
+          name: 'ElAlertBasicComponent',
+          component: ElAlertBasicComponent,
+        },
+        {
+          path: '/ElAlertWithIcomComponent',
+          name: 'ElAlertWithIcomComponent',
+          component: ElAlertWithIcomComponent,
+        },
+        {
+          path: '/ElToolTipComponent',
+          name: 'ElToolTipComponent',
+          component: ElToolTipComponent,
+        },
+        {
+          path: '/ElToolTipAdvancedUsageComponent',
+          name: 'ElToolTipAdvancedUsageComponent',
+          component: ElToolTipAdvancedUsageComponent,
+        },
+        {
+          path: '/ElPopoverComponent',
+          name: 'ElPopoverComponent',
+          component: ElPopoverComponent,
+        },
+        {
+          path: '/ElPopoverNestedComponent',
+          name: 'ElPopoverNestedComponent',
+          component: ElPopoverNestedComponent,
+        },
+        {
+          path: '/ElCardWithVForComponent',
+          name: 'ElCardWithVForComponent',
+          component: ElCardWithVForComponent,
+        },
+        {
+          path: '/ElStepComponent',
+          name: 'ElStepComponent',
+          component: ElStepComponent,
+        },
+        {
+          path: '/LayoutAndDetailComponent',
+          name: 'LayoutAndDetailComponent',
+          component: LayoutAndDetailComponent,
+        },
+      ],
     },
   ],
 });
