@@ -17,6 +17,7 @@ import ElPopoverComponent from '@/components/ElPopoverComponent';
 import ElPopoverNestedComponent from '@/components/ElPopoverNestedComponent';
 import ElCardWithVForComponent from '@/components/ElCardWithVForComponent';
 import ElStepComponent from '@/components/ElStepComponent';
+import LayoutAndDetailComponent from '@/components/LayoutAndDetailComponent';
 
 Vue.use(Router);
 
@@ -106,6 +107,11 @@ export default new Router({
       path: '/ElStepComponent',
       name: 'ElStepComponent',
       component: ElStepComponent,
+    },
+    {
+      path: '/LayoutAndDetailComponent',
+      name: 'LayoutAndDetailComponent',
+      component: LayoutAndDetailComponent,
     },
   ],
 });
